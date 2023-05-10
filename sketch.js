@@ -184,7 +184,6 @@ if (hitControls) {
       text("shift to toggle modes", windowWidth /28, 75);
       text("1 to add/remove ball", windowWidth /28, 90);
       text("2 to add/remove ball", windowWidth /28, 105);
-      text("tap space bar to change drum kit", windowWidth /28, 120);
     }
     
     
@@ -345,7 +344,6 @@ if (hitControls) {
       text("shift to toggle modes", windowWidth /28, 75);
       text("1 to add/remove ball", windowWidth /28, 90);
       text("2 to add/remove ball", windowWidth /28, 105);
-      text("tap space bar to change drum kit", windowWidth /28, 120);
     }
     }
 }
