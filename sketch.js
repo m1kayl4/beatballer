@@ -411,8 +411,8 @@ function keyPressed() {
       } else {
         xpos = random(50, windowWidth - 50);
         ypos = 50;
-        xspeed = random(-25, 25);
-        yspeed = random(-25, 25);
+        xspeed = random(-40, 40);
+        yspeed = random(-40, 40);
         ballVisible = true;
         filterEnabled = true;
         currentLoop.disconnect();
@@ -425,8 +425,8 @@ function keyPressed() {
         }
 
         ballFrozen = false;
-        xspeed = random(-25, 25);
-        yspeed = random(-25, 25);
+        xspeed = random(-40, 40);
+        yspeed = random(-40, 40);
       }
     }
   }
@@ -440,8 +440,8 @@ function keyPressed() {
       } else {
         xpos = random(50, windowWidth - 50);
         ypos = 50;
-        xspeed = random(-25, 25);
-        yspeed = random(-25, 25);
+        xspeed = random(-40, 40);
+        yspeed = random(-40, 40);
         ballVisible = true;
         dragging = false; // reset dragging
       }
@@ -451,8 +451,8 @@ function keyPressed() {
         }
 
         ballFrozen = false;
-        xspeed = random(-25, 25);
-        yspeed = random(-25, 25);
+        xspeed = random(-40, 40);
+        yspeed = random(-40, 40);
       }
     }
   }
@@ -468,8 +468,8 @@ function keyPressed() {
       } else {
         xpos = random(50, windowWidth - 50);
         ypos = 50;
-        xspeed = random(-25, 25);
-        yspeed = random(-25, 25);
+        xspeed = random(-40, 40);
+        yspeed = random(-40, 40);
         ballVisible = true;
         filterEnabled = true;
         currentLoop.disconnect();
@@ -482,8 +482,8 @@ function keyPressed() {
         }
 
         ballFrozen = false;
-        xspeed = random(-25, 25);
-        yspeed = random(-25, 25);
+        xspeed = random(-40, 40);
+        yspeed = random(-40, 40);
       }
     }
   }
@@ -496,8 +496,8 @@ function keyPressed() {
       } else {
         xpos2 = random(50, windowWidth - 50);
         ypos2 = 50;
-        xspeed2 = random(-25, 25);
-        yspeed2 = random(-25, 25);
+        xspeed2 = random(-40, 40);
+        yspeed2 = random(-40, 40);
         ball2Visible = true;
         dragging2 = false; // reset dragging
       }
@@ -507,8 +507,8 @@ function keyPressed() {
         }
 
         ball2Frozen = false;
-        xspeed2 = random(-25, 25);
-        yspeed2 = random(-25, 25);
+        xspeed2 = random(-40, 40);
+        yspeed2 = random(-40, 40);
       }
     }
   }
@@ -524,8 +524,8 @@ function keyPressed() {
       } else {
         xpos = random(50, windowWidth - 50);
         ypos = 50;
-        xspeed = random(-25, 25);
-        yspeed = random(-25, 25);
+        xspeed = random(-40, 40);
+        yspeed = random(-40, 40);
         ballVisible = true;
         delay.process(currentLoop, 0.25, 0.5, 2000);
         currentLoop.disconnect();
@@ -539,8 +539,8 @@ function keyPressed() {
         }
 
         ballFrozen = false;
-        xspeed = random(-25, 25);
-        yspeed = random(-25, 25);
+        xspeed = random(-40, 40);
+        yspeed = random(-40, 40);
       }
     }
   }
@@ -576,8 +576,8 @@ function canvasPressed() {
     dragging = false;
   }
   if (ballFrozen && !dragging) {
-    xspeed = random(-25, 25);
-    yspeed = random(-25, 25);
+    xspeed = random(-40, 40);
+    yspeed = random(-40, 40);
     ballFrozen = false;
   }
   //
@@ -594,8 +594,8 @@ function canvasPressed() {
     dragging2 = false;
   }
   if (ball2Frozen && !dragging2) {
-    xspeed2 = random(-25, 25);
-    yspeed2 = random(-25, 25);
+    xspeed2 = random(-40, 40);
+    yspeed2 = random(-40, 40);
     ball2Frozen = false;
   }
 }
@@ -606,16 +606,16 @@ function canvasReleased() {
     xpos = mouseX;
     ypos = mouseY;
   } else {
-    xspeed = random(-25, 25);
-    yspeed = random(-25, 25);
+    xspeed = random(-40, 40);
+    yspeed = random(-40, 40);
   }
   dragging2 = false;
   if (ball2Frozen) {
     xpos2 = mouseX;
     ypos2 = mouseY;
   } else {
-    xspeed2 = random(-25, 25);
-    yspeed2 = random(-25, 25);
+    xspeed2 = random(-40, 40);
+    yspeed2 = random(-40, 40);
   }
 }
 function windowResized() {
