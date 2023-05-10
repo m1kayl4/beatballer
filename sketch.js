@@ -271,8 +271,8 @@ if (hitControls) {
       currentHihat.play();
     }
   }
-/////////////////////////////////////////  
-
+  
+//so that text doesn't disappear when ball is clicked (there has to be another way to fix that issue?)
    if (loopMode){
     textAlign(CENTER);
     textSize(88);
@@ -433,8 +433,8 @@ function keyPressed() {
 
   if (hitMode == true) {
     if (keyCode === 49) {
-      // ball appears and filter is applied when a number key is pressed, if number is pressed again, the ball dissappears and the loop continues playing without the filter
-      //press 1 for lowpass
+      // ball appears 
+      
       if (ballVisible) {
         ballVisible = false;
       } else {
@@ -489,8 +489,7 @@ function keyPressed() {
   }
   if (hitMode == true) {
     if (keyCode === 50) {
-      // ball appears and filter is applied when a number key is pressed, if number is pressed again, the ball dissappears and the loop continues playing without the filter
-      //press 1 for lowpass
+      // ball appears 
       if (ball2Visible) {
         ball2Visible = false;
       } else {
@@ -544,7 +543,7 @@ function keyPressed() {
       }
     }
   }
-  //
+  //increase and decrease loop rate with + and - keys
   if (loopMode == true) {
     if (keyCode === 189) {
       if (currentLoop.rate() > 0.5) {
